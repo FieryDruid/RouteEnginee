@@ -1,0 +1,121 @@
+[flake8]
+ignore =
+    # [flake8]
+    # Indentation contains tabs
+    W191,
+    # Max line length
+    E501,
+
+    # [docstrings]
+    # Ignore google docstring format
+    D,
+    # Ignore ReStructured docstring format
+    RST,
+
+    # [flake8-annotations]
+    # Missing type annotation for self in method
+    ANN101,
+    # Missing type annotation for cls in classmethod
+    ANN102,
+    # Missing type annotation for args
+    ANN002,
+    # Missing type annotation for kwargs
+    ANN003,
+
+    # [wemake-python-styleguide]
+    # Forbid f strings
+    WPS305,
+    # Forbid logic inside __init__ module
+    WPS412,
+    # Forbid subclassing lowercase builtins
+    WPS600,
+    # Forbid writing classes without base classes
+    WPS306,
+    # Ignore metadata in modules
+    WPS410,
+    # Ignore nested functions
+    WPS430,
+    # Found string constant over-use
+    WPS347,
+    # Static method
+    WPS602,
+    # Found '%' string formatting
+    WPS323,
+    # Ignore many local variables
+    WPS210,
+    # Ignore negated condition
+    WPS504,
+    # Ignore mutable object as constant
+    WPS407,
+    # Ignore bad var names
+    WPS110,
+    # Ignore variables only for returning
+    WPS331,
+    # Ignore trailing underscore in names
+    WPS120,
+    # Ignore complex f-string
+    WPS237,
+    # Ignore noqa
+    WPS400,
+    # Ignore upper case constant in class
+    WPS115,
+    # Ignore methods without arguments
+    WPS605,
+
+
+    # [flake8-bugbear]
+    # Ignore long line
+    B950,
+
+    # [flake8-isort]
+    # Ignore import in the wrong position
+    I001,
+    # Ignore unexpected missing import
+    I005,
+
+    # [flake8-commas]
+    # Ignore trailing comma
+    C81,
+
+    # [flake8-bandit]
+    # Ignore hardcoded password
+    S105
+
+    # [pep8-naming]
+    # Ignore 'error' suffics in exception names
+    N818
+
+inline-quotes = '
+
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    **/migrations/*,
+    **/tests/*
+
+max-line-length = 120
+max-imports = 20
+max-methods = 10
+max-jones-score = 18
+
+per-file-ignores =
+    # module imported but unused
+    */__init__.py: F401, WPS300
+
+suppress-none-returning = True
+suppress-dummy-args = True
+mypy-init-return = True
+
+extend-select =
+    C4
+
+
+
+
+
+
+
+
+
+
