@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "RouteEnginee"
+version = "1.0.0"
+description = "Make routes for engineers"
+authors = ["Pavel Krasnobaev <mrfierydruid@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "3.10.8"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.0"
+flake8-comprehensions = "^3.8.0"
+flake8-annotations = "^2.7.0"
+flake8-logging-format = "^0.9.0"
+flake8-broken-line = "^0.5.0"
+wemake-python-styleguide = "^0.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
